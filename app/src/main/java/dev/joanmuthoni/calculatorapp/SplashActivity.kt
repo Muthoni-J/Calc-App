@@ -8,7 +8,8 @@ import com.example.calculatorapplication.MainActivity
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        intent = Intent(MainActivity::Java)
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
 
 //        setContentView(R.layout.activity_splash)
     }
